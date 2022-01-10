@@ -45,7 +45,9 @@ class _AddNewItemState extends State<AddNewItem> {
     }
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: AppText(text: widget.item != null ? 'Edit' : 'Add'),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
